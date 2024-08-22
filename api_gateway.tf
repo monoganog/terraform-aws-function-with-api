@@ -71,14 +71,13 @@ resource "aws_cloudwatch_log_group" "api_gateway_group" {
 }
 
 resource "aws_api_gateway_method_settings" "this" {
-  count       = var.enable_api_gateway_logging ? 1 : 0
   rest_api_id = aws_api_gateway_rest_api.this.id
   stage_name  = aws_api_gateway_stage.this.stage_name
   method_path = "*/*"
 
   settings {
-    logging_level      = var.api_gateway_logging_level
-    metrics_enabled    = true
+    metrics_enabled    = false
+    logging_level      = null
     data_trace_enabled = false
   }
 
