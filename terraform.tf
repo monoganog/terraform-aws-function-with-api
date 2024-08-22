@@ -24,5 +24,5 @@ provider "aws" {
 }
 
 provider "github" {
-  owner = "nphilbrook"
+  owner = "monoganog"
 }
