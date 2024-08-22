@@ -1,11 +1,11 @@
 resource "github_repository" "code" {
   name        = "${aws_lambda_function.this.function_name}-code"
-  description = "Code for the ${aws_lambda_function.this.function_name} Lambda function."
+  description = "Code for Bens ${aws_lambda_function.this.function_name} Lambda function."
 
   visibility = "private"
 
   template {
-    owner      = "nphilbrook"
+    owner      = "monoganog"
     repository = "lambda-function-template"
   }
 }
