@@ -1,5 +1,5 @@
 resource "github_repository" "code" {
-  name        = "${aws_lambda_function.this.function_name}-code"
+  name        = "${aws_lambda_function.this.function_name}-code-demo"
   description = "Code for Bens ${aws_lambda_function.this.function_name} Lambda function."
 
   visibility = "private"
