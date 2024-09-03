@@ -15,5 +15,5 @@ This No-code module includes no provider credentials (AWS or Github).
 
 Assumptions/requirements:
 * AWS credentials must be provided to the workspace provisioned by this module (ideally in a HCP Terraform Variable Set). I recommend [Workload Identity](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration))
-* GitHub credentiials must also be made available to the workspace, a `GITHUB_TOKEN` environment variable in a Variable Set works.
-* The templated Github Actions YAML in the above repository uses GitHub secrets for the AWS ID and Secret. The secrets AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY will needed to be added in "Actions secrets and variables" in the resulting Project.
+* GitHub credentials must also be made available to the workspace, a `GITHUB_TOKEN` environment variable in a Variable Set works.
+* The templated Github Actions YAML in the above repository uses GitHub secrets for the AWS ID and Secret. The secrets `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` will needed to be added in "Actions secrets and variables" in the resulting Project.
